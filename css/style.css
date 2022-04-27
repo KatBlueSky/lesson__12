@@ -1,0 +1,557 @@
+/* &display=swap */
+@import "null.css";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+/* ================================================================ */
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+}
+
+/* --------відцентровую----------------------------------- */
+
+
+
+	.car__container{
+		min-height: 500px;
+		margin: 200px 250px;
+		position: relative;
+	}
+
+/* ========криша та скло======= */
+
+.roof__left{
+	width: 300px;
+	height: 200px;
+	position: absolute;
+	background-color: rgb(213, 73, 35);
+	top: 100px;
+	left: 315px;
+	transform: skew(300deg,0deg);
+	border-radius: 10px 50px 0px 0px;
+	border: 2px solid rgb(124, 54, 14);
+}
+
+.roof__right{
+	width: 19px;
+	height: 100px;
+	position: absolute;
+	background-color: rgb(213, 73, 35);
+	top: 100px;
+	left: 690px;
+	transform: skew(53deg, 0deg);
+	border-radius: 0px 100px 0px 0px;
+	border: 2px solid  rgb(124, 54, 14);
+}
+
+
+.roof__back{
+	width: 45px;
+	height: 100px;
+	position: absolute;
+	background-color: rgb(213, 73, 35);
+	top: 100px;
+	left: 785px;
+	transform: skew(225deg, 0deg);
+	border-radius: 0px 100px 0px 0px;
+	border: 2px solid  rgb(124, 54, 14);
+
+}
+
+
+.roof__mirror-left{
+	width: 30px;
+	height: 90px;
+	position: absolute;
+	background-color: rgb(121, 121, 121);
+	border-radius: 58% 21% 4% 100% / 100% 100% 0% 0%;
+	top: 110px;
+	left: 388px;
+	transform: skew(-57deg, 1deg);
+	border: 3px solid rgb(78, 78, 78);
+}
+
+.roof__mirror-left::before{
+	content: '';
+	width: 13px;
+	height: 50px;
+	z-index: 2;
+	background-color: rgb(176, 176, 176);
+	position: absolute;
+	border-radius: 55% 21% 4% 100% / 100% 100% 0% 0%;
+	top: 2px;
+	left: 8px;
+}
+
+.roof__mirror-center{
+	width: 245px;
+	height: 80px;
+	position: absolute;
+	background-color: rgb(121, 121, 121);
+	top: 110px;
+	left: 450px;
+	z-index: 3;
+	transform: skew(-56deg, 0deg);
+	border-radius: 10px 10px 0px 10px;
+	border: 3px solid rgb(78, 78, 78);
+}
+
+.roof__mirror-center::before{
+	content: '';
+	width: 120px;
+	height: 50px;
+	position: absolute;
+	background-color: rgb(176, 176, 176);
+	top: 5px;
+	left: 20px;
+	border-radius: 10px 10px 5px 10px;
+}
+
+.roof__mirror-right{
+	width: 225px;
+	height: 80px;
+	position: absolute;
+	background-color: rgb(121, 121, 121);         
+	top: 110px;
+	left: 590px;
+	z-index: 2;
+	transform: skew(40deg, 0deg);
+	border-radius: 0px 50px 0px 0px;
+	border: 3px solid rgb(78, 78, 78);
+}
+
+
+.roof__mirror-right::before{
+	content: '';
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	transform: skew(-65deg, 0deg);
+	background-color: rgb(176, 176, 176);
+	top: 5px;
+	left: 90px;
+	border-radius: 10px 10px 10px 5px;
+}
+
+
+/* ===============Зеркала и радиатор ======== */
+.frame__center{
+	width: 850px;
+	height: 160px;
+	background-color:rgb(213, 73, 35);
+	border-radius:97% 58% 32% 48% / 73% 23% 49% 27%;
+	position: relative;
+	top: 179px;
+	left: 100px;
+	border: 2px solid rgb(138, 0, 0);
+}
+
+.frame__headlamp{
+	width: 80px;
+	height: 30px;
+	background-color: rgb(245, 231, 38);
+	box-shadow: inset 2px 2px 5px rgb(215, 133, 10);
+	border-radius: 100% 30% 100% 30% / 98% 15% 100% 20%;
+	position: absolute;
+	top: 220px;
+	left: 130px;
+	transform: rotate(-13deg);
+	border: 2px solid rgb(200, 159, 9);
+}
+
+.frame__left::before{
+	content: '';
+	position: absolute;
+	border-radius: 60%;
+	border-right: 8px solid rgb(156, 35, 35);
+	transform: rotate(45deg);
+	width: 40px;
+	height: 75px;
+	top: 258px;
+	left: 140px;
+	z-index: 2;
+}
+
+.frame__headlamp-small{
+	border-radius: 85% 10% 63% 45% / 57% 100% 10% 23%;
+	width: 50px;
+	height: 10px;
+	position: absolute;
+	top: 250px;
+	left: 155px;
+	background-color: rgb(227, 154, 46);
+	border: 2px solid rgb(212, 144, 55);
+	transform: rotate(-20deg);
+}
+
+.frame__radiator-big{
+	width: 45px;
+	height: 4px;
+	position: absolute;
+	top: 290px;
+	left: 125px;
+	background-color: #000;
+	border-radius: 3px;
+}
+
+.frame__radiator-medium{
+	width: 55px;
+	height: 4px;
+	position: absolute;
+	top: 280px;
+	left: 125px;
+	background-color: #000;
+	border-radius: 3px;
+}
+
+
+.frame__radiator-small{
+	width: 30px;
+	height: 4px;
+	position: absolute;
+	top: 300px;
+	left: 125px;
+	background-color: #000;
+	border-radius: 3px;
+}
+
+
+/* ===========Левая часть(шины) =========== */
+
+.frame__wheel-left{
+	width: 140px;
+	height: 140px;
+	background-color: #000;
+	position: absolute;
+	top: 280px;
+	left: 207px;
+	border-radius: 50%;
+	box-shadow: 0px -10px 0px rgb(231, 204, 204);
+	z-index: 8;
+}
+
+.frame__wheel-left::before{
+	content: '';
+	width: 100px;
+	height: 100px;
+	background-color: rgb(54, 53, 53);
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	border-radius: 50%;
+	z-index: 3;
+}
+
+.frame__wheel-left::after {
+	content: '';
+	width: 50px;
+	height: 50px;
+	background-color: rgb(117, 103, 103);
+	position: absolute;
+	top: 45px;
+	left: 45px;
+	border-radius: 50%;
+	z-index: 5;
+}
+
+.frame__wheel-near{
+	width: 40px;
+	height: 15px;
+	background-color: #000;
+	border-radius: 79% 10% 37% 54% / 100% 0% 49% 10%;
+	position: absolute;
+	top: 318px;
+	left: 183px;
+	transform: skew(-40deg,5deg);
+}
+.frame__wheel-beside{
+	width: 40px;
+	height: 15px;
+	background-color: #000;
+	border-radius: 0% 100% 37% 54% / 100% 100% 0% 0%;
+	position: absolute;
+	top: 323px;
+	left: 335px;
+	transform: skew(60deg,-1deg);
+}
+
+.frame__disk-1 {
+	width: 100px;
+	height: 3px;
+	position: absolute;
+	top: 69px;
+	left: 20px;
+	background-color: rgb(196, 132, 132);
+	transform: rotate(180deg);
+	z-index: 4;
+}
+
+.frame__disk-2 {
+	width: 98px;
+	height: 3px;
+	position: absolute;
+	top: 68px;
+	left: 21px;
+	background-color:  rgb(196, 132, 132);
+	transform: rotate(150deg);
+	z-index: 4;
+}
+
+.frame__disk-3 {
+	width: 98px;
+	height: 3px;
+	position: absolute;
+	top: 68px;
+	left: 21px;
+	background-color:  rgb(196, 132, 132);
+	transform: rotate(120deg);
+	z-index: 4;
+}
+
+.frame__disk-4 {
+	width: 98px;
+	height: 3px;
+	position: absolute;
+	top: 68px;
+	left: 21px;
+	background-color:  rgb(196, 132, 132);
+	transform: rotate(90deg);
+	z-index: 4;
+}
+
+.frame__disk-5 {
+	width: 98px;
+	height: 3px;
+	position: absolute;
+	top: 68px;
+	left: 21px;
+	background-color: rgb(196, 132, 132);
+	transform: rotate(60deg);
+	z-index: 4;
+}
+
+.frame__disk-6 {
+	width: 98px;
+	height: 3px;
+	position: absolute;
+	top: 68px;
+	left: 21px;
+	background-color:  rgb(196, 132, 132);
+	transform: rotate(30deg);
+	z-index: 4;
+}
+
+.frame__center-door{
+	width: 235px;
+	height: 160px;
+	background-color:rgb(213, 73, 35);
+	position: absolute;
+	top: -10px;
+	left: 270px;
+   border-radius: 17% 4% 5% 22% / 25% 9% 8% 28%; 
+	/* border-radius: 81% 90% 27% 77% / 45% 35% 52% 10%; */
+	border: 2px solid	rgb(101, 101, 101);
+}
+
+.frame__right-door{
+	width: 165px;
+	height: 160px;
+	background-color:rgb(213, 73, 35);
+	position: absolute;
+	top: -10px;
+	left: 490px;
+	border-radius:7% 10% 39% 6% / 9% 13% 70% 8%;
+	border: 2px solid	rgb(101, 101, 101);
+}
+
+
+
+
+.frame__center-handle{
+	width: 50px;    
+	height: 17px;
+	border: 2px solid  rgb(101, 101, 101);
+	position: absolute;
+	border-radius: 40%;
+	top: 20px;
+	left: 430px;
+}
+.frame__center-door::after{
+	content: '';
+	width: 30px;
+	height: 5px;
+	background-color: rgba(57, 57, 57, 0.842);
+	position: absolute;
+	border-radius: 40%;
+	top: 33px;
+	left: 175px;
+	z-index: 5;
+}
+
+
+
+/* ============Правая часть =============== */
+.frame__right {
+	width: 140px;
+	height: 140px;
+	background-color: #000;
+	position: absolute;
+	top: 283px;
+	left: 720px;
+	border-radius: 50%;
+	box-shadow: 0px -10px 0px rgb(231, 204, 204);
+	z-index: 8;
+}
+
+
+
+.frame__wheel-right::before {
+	content: '';
+	width: 100px;
+	height: 100px;
+	background-color: rgb(54, 53, 53);
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	border-radius: 50%;
+	z-index: 3;
+}
+
+.frame__wheel-right::after {
+	content: '';
+	width: 50px;
+	height: 50px;
+	background-color: rgb(117, 103, 103);
+	position: absolute;
+	top: 45px;
+	left: 45px;
+	border-radius: 50%;
+	z-index: 5;
+}
+
+.frame__disk-7 {
+	width: 98px;
+	height: 3px;
+	position: absolute;
+	top: 68px;
+	left: 21px;
+	background-color:rgb(196, 132, 132);
+	transform: rotate(180deg);
+	z-index: 4;
+}
+
+.frame__disk-8 {
+	width: 98px;
+	height: 3px;
+	position: absolute;
+	top: 68px;
+	left: 21px;
+	background-color: rgb(196, 132, 132);
+	transform: rotate(150deg);
+	z-index: 4;
+}
+
+.frame__disk-9 {
+	width: 98px;
+	height: 3px;
+	position: absolute;
+	top: 68px;
+	left: 21px;
+	background-color: rgb(196, 132, 132);
+	transform: rotate(120deg);
+	z-index: 4;
+}
+
+.frame__disk-10 {
+	width: 98px;
+	height: 3px;
+	position: absolute;
+	top: 68px;
+	left: 21px;
+	background-color: rgb(196, 132, 132);
+	transform: rotate(90deg);
+	z-index: 4;
+}
+
+.frame__disk-11 {
+	width: 98px;
+	height: 3px;
+	position: absolute;
+	top: 68px;
+	left: 21px;
+	background-color: rgb(196, 132, 132);
+	transform: rotate(60deg);
+	z-index: 4;
+}
+
+.frame__disk-12 {
+	width: 98px;
+	height: 3px;
+	position: absolute;
+	top: 68px;
+	left: 21px;
+	background-color: rgb(196, 132, 132);
+	transform: rotate(30deg);
+	z-index: 4;
+}
+
+.frame__wheel-down {
+	width: 40px;
+	height: 15px;
+	background-color: #000;
+	border-radius: 69% 0% 37% 54% / 100% 0% 49% 0%;
+	position: absolute;
+	top: 40px;
+	right: 115px;
+	transform: skew(-60deg, 1deg);
+}
+
+.frame__wheel-back {
+	width: 80px;
+	height: 10px;
+	background-color: #000;
+	border-radius: 0% 100% 37% 54% / 100% 100% 0% 0%;
+	position: absolute;
+	top: 49px;
+	right: -6px;
+	transform: skew(73deg, -20deg);
+}
+
+.frame__headlight{
+	width: 60px;
+	height: 40px;
+	position: relative;
+	top: 90px;
+	left: 890px;
+	right: 472px;
+	border-radius: 50% 100% 50% 51% / 90% 0% 10% 50%;
+	background-color: rgb(112, 88, 88);
+}
+.frame__headlight-red{
+	width: 40px;
+	height: 10px;
+	position: absolute;
+	top: 3px;
+	left: 15px;
+	background-color: rgb(234, 87, 13);
+	border-radius: 20%;
+}
+
+.frame__headlight-yellow{
+	width: 40px;
+	height: 10px;
+	position: absolute;
+	top: 15px;
+	left: 15px;
+	background-color: rgb(250, 206, 8);
+	border-radius: 20%;
+}
+
+.frame__headlight-white {
+width: 40px;
+height: 10px;
+position: absolute;
+top: 27px;
+left: 15px;
+background-color: rgb(237, 210, 210);
+border-radius: 20%;
+}
